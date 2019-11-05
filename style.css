@@ -1,0 +1,320 @@
+
+h1{
+  font-weight: bold;
+  color: white;
+}
+.img{
+  width: 550px;
+  height: 400px;
+}
+.contact{
+ 
+  border: 3px solid black;
+  background-color: gray;
+  z-index: 50;
+  width: 500px;
+  height: 350px;
+  margin-top: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px; 
+}
+.text{
+  color: black;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  #body {
+    background-color: black;
+    margin: 0;
+    animation: pageLoad 3s ease both;
+  }
+  h1 {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  .container1 {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .peter {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100px;
+    color: white;
+    margin: 0;
+    animation: fadeOut 3s ease both;
+    position: absolute;
+    
+  } 
+  .links {
+    text-align: center;
+    height: 98vh;
+  }
+  .portfolio-link,
+  .contact-link,
+  .github-link, 
+  .linked-link{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 275px;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    margin: 0;
+    height: 160px;
+  } 
+  .portfolio-link:hover,
+  .contact-link:hover,
+  .github-link:hover,
+  .linked-link:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .portfolio-link {
+    animation: fadeInHome 1s ease both;
+    animation-delay: 2.5s;
+  }
+  .contact-link {
+    animation: fadeInWork 1.5s ease both;
+    animation-delay: 2.5s;
+  }
+  .github-link {
+    animation: fadeInBlog 1.5s ease both;
+    animation-delay: 2.5s;
+  }
+  .linked-link {
+    animation: fadeInContact 1s ease both;
+    animation-delay: 2.5s;
+  }
+  @keyframes pageLoad {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% { 
+      opacity: 1;
+    } 
+    75% {
+      opacity: 1;
+    }
+    90% {
+      transform: scale(1);
+    }
+  100% {
+      transform: scale(0);
+      display: none;
+  } 
+  }
+  
+  @keyframes fadeInHome {
+    0% {
+      opacity: 0;
+      display: none;
+      transform: scale(0)
+  } 
+    40% {
+      opacity: 0;
+      transform: translate(0, 200%); 
+    }
+  100% {
+      opacity: 1;
+      transform: translate(0, 0);
+  }
+  }
+  
+  @keyframes fadeInWork {
+    0% {
+      opacity: 0;
+      display: none;
+      transform: scale(0)
+  } 
+    40% {
+      opacity: 0;
+      transform: translate(0, 150%); 
+    }
+  100% {
+      opacity: 1;
+      transform: translate(0, 0);
+  }
+  }
+  @keyframes fadeInBlog {
+    0% {
+      opacity: 0;
+      display: none; 
+      transform: scale(0)
+  } 
+    40% {
+      opacity: 0;
+      transform: translate(0, -150%); 
+    }
+  100% {
+      opacity: 1;
+      transform: translate(0, 0);
+  }
+  }
+  @keyframes fadeInContact {
+    0% {
+      opacity: 0;
+      display: none;
+      transform: scale(0)
+  } 
+    40% {
+      opacity: 0;
+      transform: translate(0, -200%); 
+    }
+  100% {
+      opacity: 1;
+      transform: translate(0, 0);
+  }
+  }
+  
+  
+/* ====================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background:black;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+      flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+/*   padding: 2em 0em; */
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFF;
+  padding:  40px 0px;
+  width: 240px;
+}
+
+h1 {
+  text-align: left;
+  color: #444;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.4em;
+  font-size: 1em;
+}
+
+p {
+  text-align: left;
+  color: #444;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  margin: 0 0 2em;
+}
+
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect01 {
+  color: #FFF;
+  border: 4px solid #000;
+  box-shadow:0px 0px 0px 1px #000 inset;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.effect01:hover {
+  border: 4px solid #666;
+  background-color: #FFF;
+  box-shadow:0px 0px 0px 4px #EEE inset;
+}
+
+/*btn_text*/
+.effect01 span {
+  transition: all 0.2s ease-out;
+  z-index: 2;
+}
+.effect01:hover span{
+  letter-spacing: 0.13em;
+  color: #333;
+}
+
+/*highlight*/
+.effect01:after {
+  background: #FFF;
+  border: 0px solid #000;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .8;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+  z-index: 1;
+}
+.effect01:hover:after {
+  background: #FFF;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
